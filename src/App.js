@@ -1,12 +1,23 @@
 import React from 'react';
 import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+
+import Register from './Register';
+import Home from './Home';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        TEST Malte is working here!
-      </header>
+      <Router>
+        <Switch>
+          <Route path="/" exact component={Home}/>
+          <Route path="/register" component={Register}/>
+        </Switch>
+      </Router>
     </div>
   );
 }
