@@ -36,27 +36,27 @@ const Button = styled.button`
     font-size: 16px;
 `;
 
-function Register() {
-    return(
+
+function Register2() {
+    return (
         <div>
             <Title>Register</Title>
             <Form id="register-form">
-                <Label for="user-name">User Name</Label><br/>
-                <Input type="text" id="user-name" name="user-name" placeholder="Enter User Name"/><br/>
-                <Label for="first-name">First Name</Label><br/>
-                <Input type="text" id="first-name" name="first-name" placeholder="Enter First Name"/><br/>
-                <Label for="last-name">Last Name:</Label><br/>
-                <Input type="text" id="last-name" name="last-name" placeholder="Enter Last Name"/><br/>
-                <Label for="birthday">Birthday</Label><br/>
-                <Input type="date" id="birthday" name="birthday" /><br/>
-                <Link to="/register2">
+                <Label for="e-mail">E-Mail</Label><br/>
+                <Input type="e-mail" id="e-mail" name="e-mail" placeholder="Enter your E-Mail"/><br/>
+                <Label for="password">Password</Label><br/>
+                <Input type="text" id="password" name="password" placeholder="Choose a Password"/><br/>
+                <Label for="last-name">Confirm Password</Label><br/>
+                <Input type="text" id="confirm-password" name="confirm-password" placeholder="Confirm the Password"/><br/>
+             
+                <Link to="/">
                     <Button>Next</Button>
                 </Link>
             </Form>
 
-            
+
         </div>
     )
 }
 
-export default Register;
+export default Register2;
